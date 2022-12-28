@@ -1,0 +1,365 @@
+@import "vars";
+
+@mixin brd ($brad) {
+    border-radius: $brad;
+    -webkit-border-radius: $brad;
+    -moz-border-radius: $brad;
+}
+
+.txtfont {
+    background-color: #0a121f;
+    height: 100px;
+    margin-bottom: 160px;
+}
+
+@mixin txtfooter ($ff, $fs, $fw) {
+    font-family: $ff;
+    font-style: $fs;
+    font-weight: $fw;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020A18;
+}
+
+.bgc {
+    background-color: #08101e;
+}
+
+.header {
+    @extend .txtfont;
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: $txt-color;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 40px 20px;
+}
+
+.menu_link__index_button {
+    background-color: $button-bgc;
+    border-radius: 5px;
+    padding: 15px 30px;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: $txt-color;
+    display: flex;
+    padding: 30px;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.menu_link__index_button:hover {
+    color: $button-hover;
+    background-color: $button-link-bgc;
+    border-radius: 20px;
+}
+
+.title3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #3A6888;
+    margin-bottom: 10px;
+}
+
+.main_heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    color: $txt-color;
+    margin-bottom: 40px;
+}
+
+.index_button {
+    background-color: $button-bgc;
+    border-radius: 5px;
+    padding: 15px 30px;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: $txt-color;
+}
+
+.main_dc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: $txt-color;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.logo__bar {
+    margin-top: 200px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.flex_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 264px;
+}
+
+.content_left {
+    width: 604px;
+}
+
+button:hover {
+    background-color: green;
+    color: yellow;
+}
+
+.second {
+    background-color: #020A18;
+}
+
+.header_second {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: $txt-color;
+    padding-top: 150px;
+    margin-bottom: 30px;
+}
+
+.main_second {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: $txt-color;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    background: $button-bgc;
+    border-radius: 5px;
+    padding: 15px 30px;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $txt-color;
+}
+
+.button1 {
+    @include brd(5px);
+}
+
+.button2 {
+    @include brd(20px);
+}
+
+.button3 {
+    @include brd(50px);
+}
+
+.container_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_second {
+    padding-top: 150px;
+}
+
+.right_second {
+    padding-top: 100px;
+}
+
+
+.title4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    text-align: center;
+    color: $txt-color;
+    padding-top: 30px;
+}
+
+.many_blocks {
+    background: #020A18;
+}
+
+.content_blocks {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: $txt-color;
+    opacity: 0.7;
+    padding-top: 30px;
+}
+
+.left_content_image {
+    width: 754px;
+    background: #132035;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.flex_content_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.right_content_image {
+    margin-top: 30px;
+}
+
+.margin_butt {
+    margin-bottom: 30px;
+}
+
+.item {
+    width: 362px;
+    background: #132035;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.big {
+    width: 306px;
+}
+
+.left {
+    padding-top: 60px;
+}
+
+
+.container_fourth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    padding-bottom: 235px;
+}
+
+.header_fourth {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: $txt-color;
+    width: 548px;
+}
+
+.main_fourth {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: $txt-color;
+    opacity: 0.7;
+    width: 460px;
+    padding: 20px 0px;
+}
+
+.footer {
+    background-color: #0a121f;
+    padding-bottom: 26px;
+}
+
+.header_footer {
+    @include txtfooter('Roboto', normal, 500);
+    font-size: 16px;
+    line-height: 19px;
+    color: $txt-color;
+    padding-top: 48px;
+    padding-bottom: 33px;
+}
+
+.main_footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $txt-color;
+    width: 261px;
+    padding-bottom: 24px;
+}
+
+.main_footer_text {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+    color: $txt-color;
+    opacity: 0.6;
+    width: 261px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa {
+    margin-right: 10px;
+    color: $txt-color;
+}
+
+.main_brands {
+    display: flex;
+    justify-content: baseline;
+}
+
+.icon {
+    padding-right: 20px;
+}
